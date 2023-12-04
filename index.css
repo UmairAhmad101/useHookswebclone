@@ -22,17 +22,36 @@ html {
 body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     background-color: var(--color-bg);
+
     
 }
 h1 {
     color:var(--heading-color);
-    font-size: 6.5rem ;
+    font-size: 4rem ;
+    margin-bottom: 1.6rem;
 }
 h6 {
     color:var(--secondary-heading--color);
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: normal;
+    
 }
+
+.hero-section-heading-6 {
+    white-space: nowrap;
+}
+
+
+
+@media screen and (min-width :768px ){
+    h1 {
+        font-size: 6.5rem;
+    }
+    h6 {
+        font-size: 2rem;
+    }
+}
+
 
 /* Hero -- Section  */
 .container {
@@ -41,8 +60,17 @@ h6 {
 
 }
 
+.hero-section-heading {
+    display: flex;
+    align-self: center;
+
+}
+
 
 .hero-container {
+    display: flex;
+    flex-direction: column;
+   
  position: absolute;
  top: 10%;
  right: 50%; 
@@ -56,7 +84,9 @@ h6 {
 
 .btns-container {
     margin-top:1.5rem ;
-    margin-left: 7rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
 .btn-primary {
@@ -69,6 +99,7 @@ h6 {
 .btn-primary:hover {
     background-color: var(--primary-Btn--hover--Color);
     cursor: pointer;
+
 }
 /* 1D283A */
 .btn-secondry {
@@ -83,4 +114,45 @@ h6 {
 }
 .btn-secondry:hover {
     background-color:var(--secondry-btn--hover--color) ;
+}
+
+
+
+
+
+/* Features Section */
+.features-heading {
+    display: flex;
+    justify-content: center;
+}
+.features {
+    width: 100%;
+    height: 400px;
+    background-color: #1c2a4b;
+}
+
+
+/* Footer Section */
+.footer-heading {
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-container {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+
+.footer-h6 {
+    align-self: center;
+}
+
+@media screen  and (max-width :  1024px){
+    .footer-h6 {
+        margin: 0 4rem;
+    }
 }
