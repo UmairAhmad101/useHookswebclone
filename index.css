@@ -1,0 +1,86 @@
+:root {
+    --color-bg : #030711;
+    --heading-color: #E1E7EF;
+    --secondary-heading--color:#7F8EA3;
+    --primary-Btn--hover--Color : #DFE2E5;
+    --secondry-btn--hover--color:#1D283A;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+    
+}
+
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: var(--color-bg);
+    
+}
+h1 {
+    color:var(--heading-color);
+    font-size: 6.5rem ;
+}
+h6 {
+    color:var(--secondary-heading--color);
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+/* Hero -- Section  */
+.container {
+    position: relative;
+    height: 100vh;
+
+}
+
+
+.hero-container {
+ position: absolute;
+ top: 10%;
+ right: 50%; 
+ transform: translate(50%, 50%);
+}
+
+/* This is changes to code */
+
+
+/* Buttons */
+
+.btns-container {
+    margin-top:1.5rem ;
+    margin-left: 7rem;
+}
+
+.btn-primary {
+    padding: 11px 25px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-Btn--hover--Color);
+    cursor: pointer;
+}
+/* 1D283A */
+.btn-secondry {
+    padding:11px 25px;
+    font-size:14px;
+    border-radius: 4px;
+    border: 1px solid rgba(245, 245, 245, 0.288);
+    color: white;
+    background-color: var(--color-bg);
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+.btn-secondry:hover {
+    background-color:var(--secondry-btn--hover--color) ;
+}
